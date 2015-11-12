@@ -1,0 +1,240 @@
+body.sd {
+  font-family: Avenir, Lato;
+  max-width: 1260px;
+  margin: 0px;
+
+}
+
+.sd-page {
+  width: 800px;
+  min-height: 2000px;
+  margin-top: 30px;
+  padding-top: 30px;
+  /*float: right;*/
+  background-color: #F5F5F5;
+  /* this parameter restricts the max width that works in the tool.*/
+  margin: auto;
+
+}
+
+.sd-tool-row {
+  display: block;
+  margin: 20px 0px;
+  text-align: center;
+}
+
+.sd-tool-header {
+  margin-left: 50px;
+  font-weight: 800;
+}
+
+#sd-tableizer-container {
+
+  /*display: none;*/
+  /*background-color: white;*/
+  margin: 50px auto;
+  padding: 20px;
+}
+ 
+
+
+
+#sd-instruct {
+  width: 450px;
+  text-align: left;
+  margin: 0px auto;
+ 
+}
+
+
+
+.sd-color-swatch, .sd-color-picker,
+.sd-table-swatch, .sd-row-swatch, .sd-header-swatch {
+  cursor: pointer;
+  font-family: Lato;
+  font-size: 10px;
+  width: 90px;
+  height: 40px;
+  display: inline-block;
+  vertical-align: middle;
+  line-height:40px;
+  border-radius:10px;
+  border: 3px solid #303030;
+  margin: 1px 0px;
+  color: black;
+  padding: 5px;
+
+}
+
+.sd-header-swatch {
+  cursor: pointer;
+  width: 90px;
+}
+
+select.sd {
+  
+   width: 158px;
+   padding: 10px;
+   font-size: 16px;
+   font-family: Lato, Arial;
+   line-height: 3;
+   border: 3;
+   border-radius: 0;
+   height: 34px;
+
+}
+
+span.sd-tabliezer-label {
+
+
+  margin-left: 20px;
+  margin-right: 5px;
+}
+
+input[type="text"].sd {
+
+    font-family: Avenir;
+    font-size: 20px;  
+    width: 340px;
+}
+input#sd-width {
+  width: 80px;
+  text-align: right;
+/*  margin-left: 20px; 
+*/}
+
+input[type="checkbox"] {
+  display: inline-block;
+
+}
+
+
+input[type="button"] {
+    color:white;
+    font:3.0em Avenir, Lato;
+    font-size:20px;
+    padding:14px;
+    background-color:#0066CC;
+    border: 0px solid #0066CC;
+    -moz-border-radius:10px;
+    -webkit-border-radius:10px;
+    border-radius:10px;
+    border-bottom: 1.5px solid #9f9f9f;
+
+    cursor:pointer;
+    /*display:block;*/
+    width:300px;
+  }
+input#reset {
+
+  background-color: #9B000C;
+  color: white;
+  /*border: 1px solid black;*/
+
+}
+textarea {
+  font-family: Avenir, Lato;
+}
+
+textarea::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    font-family: Avenir;
+    font-size: 50px;
+    text-align: center;
+
+
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+      font-family: Avenir;
+    font-size: 50px;
+    text-align: center;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+       font-family: Avenir;
+    font-size: 50px;
+    text-align: center;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+      font-family: Avenir;
+    font-size: 50px;
+    text-align: center;
+}
+
+.sd-tableizer-side-bar {
+  float: left;
+  width: 150px;
+  /*padding: 0px 20px;*/
+  margin: 0px 0px 0px 0px;
+  text-align: center;
+  /*margin-bottom: 3000px;*/
+  height: 2000px;
+  display: line-block;
+  /*line-height: 100px;*/
+  color: white;
+  background-color: #303030;
+  /*border-top: #FFFFFF;*/
+}
+
+
+
+.sd-side-header {
+  margin: 5px 0px;
+}
+
+#add-row, #expand-row {
+
+  color: black;
+  height: 40px;
+  width: 80px;
+  vertical-align: middle;
+
+}
+
+div#checkbox-box {
+  font-size: 14px;
+}
+
+
+
+#sd-tableizer-container {
+  
+}
+
+.sd-color {
+  width: 75px;
+  display: inline;
+}
+
+.sd-top-bar {
+
+  background-color: #303030;
+  min-height: 100px;
+  padding: 20px 0px;
+  /*border-top: 1.5px solid #FFFFFF;*/
+}
+
+.sd-top-bar-cell, .sd-top-bar-supercell {
+
+  text-align: center;
+  width: 125px;
+  display: inline-block;
+  color: white;
+  vertical-align: middle;
+  padding: 3px;
+  font-size: 14px;
+
+}
+
+.sd-top-bar-supercell {
+  border-left: 1px dashed white;
+}
+
+div#sd-instruct {
+
+  background-color: white;
+  padding: 20px;
+  border-radius: 20px;
+  border: 1px solid #909090;
+  border-bottom: 3px solid #505050;
+  /*border-left: 2px solid #909090;*/
+
+}

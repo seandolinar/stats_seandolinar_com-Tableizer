@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<!-- v1.0 new interface -->
+<head>
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-46773652-1']);
+_gaq.push(['_trackPageview']);
+(function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+</script>
+
+<link rel='stylesheet' href='general-tableizer.css' type='text/css' media='all' />
+</head>
+<body class='sd'>
+
+  <div class='sd-tableizer-side-bar'>
+    <div class='sd-color-bar' style='margin: 195px 0px 0px 0px;'>
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Single page - 2 (stats.seandolinar.com) -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-9996180831969957"
+     data-ad-slot="7019350229"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+  <div class='sd-color-bar' style='margin: 50px 0px 0px 0px;'>
+    <p class='sd-side-header'><span style='background-color: white; color: black; padding: 0px 2px;'>CELL/ROW/COL COLOR</span></p>
+      
+
+      <input name="eventColor" key='backgroundcolor' draggable='true' type="color" class='sd-color-picker' onchange="getColorVal(this.value)" value='#FDE847'/>
+
+      <div draggable='true' value='' key='backgroundcolor' class='sd-color-swatch' style='background-color: white; line-height:20px;'>Color Picker <br>Click or Drag</div>
+      <div draggable='true' value='' key='backgroundcolor' class='sd-color-swatch' style='background-color: white;'>Empty</div>
+      <div draggable='true' value='["#505050", "white"]' key='header-row' class='sd-header-swatch' id='sd-header-swatch' style='background-color: #505050; color: white;'>Header Row</div>
+  </div>
+  <div id='sd-color-bar' style='margin: 50px 0px 0px 0px;'>
+    <p class='sd-side-header'><span style='background-color: white; color: black; padding: 0px 2px;'>FONT OPTIONS</span></p>
+    <input name="eventColor" key='fontcolor' draggable='true' type="color" class='sd-color-picker' onchange="getColorVal(this.value)"/>
+      <div draggable='true' value='800' key='fontweight' class='sd-color-swatch' style='background-color: white; font-weight: 800;'>BOLD</div>
+      <div draggable='true' value='underline' key='text-decoration' class='sd-color-swatch' style='background-color: white; text-decoration: underline;'>Under</div>
+      <div draggable='true' value='left' key='text-align' class='sd-color-swatch' style='background-color: white; text-align: left;'>Left Align</div>
+      <div draggable='true' value='center' key='text-align' class='sd-color-swatch' style='background-color: white; text-align: center;'>Center</div>
+      <div draggable='true' value='right' key='text-align' class='sd-color-swatch' style='background-color: white; text-align: right;'>Right</div>
+      <div draggable='true' class='sd-header-swatch' id='remove-tht-align' style='background-color: white; color: black; line-height: 20px;'>REMOVE Numberic Align</div>
+  </div>
+  <div id='sd-color-bar' style='margin: 50px 0px 0px 0px;'>
+    <p class='sd-side-header'><span style='background-color: white; color: black; padding: 0px 2px;'>TABLE MOD</span></p>
+      <div draggable='true' value='right' key='text-align' class='sd-table-swatch' id='add-row' style='background-color: white; text-align: center; line-height: 14px;'>Insert Blank Row Above ⬆︎ <br></div>
+      <div draggable='false' value='3' key='colspan' class='sd-color-swatch' id='expand-row' style='background-color: white; text-align: center; line-height: 14px;'>Expand Cell<input type="number" min="1" max="18" step="1" value="2" id="colspan"></input></div>
+      <div draggable='false' value='3' key='remove' class='sd-color-swatch' id='expand-row' style='background-color: white; text-align: center; line-height: 14px;'>Remove Cell</div>
+  </div>
+</div>
+<div class='sd-top-bar'>
+      <div class='sd-top-bar-cell'>
+      <span class='sd-tabliezer-label'>Table Font</span>
+      <select class='sd' name='sd-table-font' style='width: 125px;'>
+        <option value='arial'>Arial</option>
+        <option value='helvetica'>Helvetica</option>
+        <option value='serif'>Serif</option>
+        <option value='times new roman'>Times New Roman</option>
+        <option value='tahoma'>Tahoma</option>
+        <option value='Trebuchet MS'>Trebuchet MS</option>
+        <option value='Courier New'>Courier New</option>
+        <option value='Verdana'>Verdana</option>
+        <!-- <option value='TSV'>Excel or TSV</option> -->
+      </select>
+    </div>
+
+    <div class='sd-top-bar-supercell'> 
+    <div class='sd-top-bar-cell'>
+    <p class='sd-side-header' style='margin-bottom: 10px;'><span style='background-color: white; color: black; padding: 0px 2px;'>TITLE</p>
+    <p class='sd-side-header'>Bkgd Color</p>
+    <input type="color" name='sd-title-bkgd-color' class='sd-color' onchange="clickColor(0, -1, -1, 5)" value="#0066CC">
+  </div>
+
+    <div class='sd-top-bar-cell'>
+    <p class='sd-side-header'>Font Color</p>
+    <input type="color" name='sd-title-font-color' class='sd-color' onchange="clickColor(0, -1, -1, 5)" value="#FFFFFF">
+  </div>
+  </div>
+
+  <div class='sd-top-bar-supercell'><div class='sd-top-bar-cell'>
+    <p class='sd-side-header' style='margin-bottom: 10px;'><span style='background-color: white; color: black; padding: 0px 2px;'>COL HEADER</span></p><p class='sd-side-header'>Bkgd Color</p>
+    <input type="color" name='sd-head-bkgd-color' class='sd-color' onchange="clickColor(0, -1, -1, 5)" value="#505050">
+  </div>
+  <div class='sd-top-bar-cell'>
+    <p class='sd-side-header'>Font Color</p>
+    <input type="color" name='sd-head-font-color' class='sd-color' onchange="clickColor(0, -1, -1, 5)" value="#FFFFFF">
+  </div>
+</div>
+<div class='sd-top-bar-supercell'>
+  <div class='sd-top-bar-cell'>
+    <p class='sd-side-header' style='margin-bottom: 10px;'><span style='background-color: white; color: black; padding: 0px 2px;'>ROW</span></p>
+    <p class='sd-side-header'>Bkgd Color</p>
+    <input type="color" name='sd-row-bkgd-color' class='sd-color' onchange="clickColor(0, -1, -1, 5)" value="#FFFFFF">
+  </div>
+  <div class='sd-top-bar-cell'>
+      <p class='sd-side-header'>Font Color</p>
+    <input type="color" name='sd-row-font-color' class='sd-color' onchange="clickColor(0, -1, -1, 5)" value="#000000">
+  </div>
+  </div>
+
+  <div class='sd-top-bar-supercell'>
+    <div class='sd-top-bar-cell'>
+      <p class='sd-side-header' style='margin-bottom: 10px;'><span style='background-color: white; color: black; padding: 0px 2px;'>HIGHLIGHT</span></p>
+      <p class='sd-side-header'>Color</p>
+    <input type="color" name='sd-highlight-color' class='sd-color' onchange="clickColor(0, -1, -1, 5)" value="#80B2E6">
+  </div>
+      <div class='sd-top-bar-cell'>
+      <p class='sd-side-header'>Font Color</p>
+    <input type="color" name='sd-highlight-font-color' class='sd-color' onchange="clickColor(0, -1, -1, 5)" value="#000000">
+  </div>
+</div>
+<div class='sd-top-bar-supercell'>
+    <div class='sd-top-bar-cell'>
+
+      <p class='sd-side-header'>Row Banding Color</p>
+    <input type="color" name='sd-row-band-color' class='sd-color' onchange="clickColor(0, -1, -1, 5)" value="#E5E5E5">
+  </div>
+</div>
+  </div>
+<div class='sd-page'>
+<div class='sd-tool-row' style='margin-top: 0px;'>
+<input type='text' class='sd' id='title' placeholder='Table Title'></input>
+
+<span class='sd-tabliezer-label'>Parser:</span>
+<select class='sd' name='parser'>
+  <option value='auto'>Auto (Default)</option>
+  <option value='CSV'>CSV</option>
+  <option value='TSV'>Excel or TSV</option>
+</select>
+</div>
+
+<div class='sd-tool-row'><textarea id="Text1" cols="80" rows="20" placeholder='Enter data here.' ></textarea></div>
+
+<div class='sd-tool-row'><input type='text' class='sd' id='source' placeholder='Source'></input> <span class='sd-tabliezer-label'>Width:</span><input type='text' class='sd' id='sd-width' value='800'>px</input></div>
+
+<div class='sd-tool-row'><p class='sd-tool-header' style='text-align: left; display: table;'>Options:</p>
+  <textarea id="text-area-notes" cols="80" rows="5" placeholder='Notes' ></textarea><br>
+  <div style='display: table;'>
+  <div id='checkbox-box' style='text-align: left; width:300; vertical-align: middle; padding: 0px 100px; display: table-cell;'>
+    <input type="checkbox" name="left-justified" class='check' value="true"> <label for='left-justified'>Justify -- Left, First Column</label><br>
+    <input type="checkbox" name="tht-justified" class='check' value="true"> <label for='tht-justified'>Justify, Center, Right-edge Numeric Align</label><br>
+    <input type="checkbox" name="sortable" class='check' value="true" > <label for='sortable'>Sortable</label><br>
+    <input type="checkbox" name="source-bar" class='check' value="true"> <label for='source-bar'>Include Source Bar at Bottom</label><br>
+  </div>
+  <div id='checkbox-box' style='float: right; text-align: left; width:200px; margin: 0px 10px; display: table-cell;'>
+    <input type="checkbox" name="rowbanding" class='check' value="true" checked> <label for='rowbanding'>Rows -- Banding</label><br>
+    <input type="checkbox" name="check-highlight-rows" class='check' value="true" checked> <label for='check-highlight-rows'>Rows -- Hover Highlight</label><br>
+
+    <input type="checkbox" name="check-numbered-rows" class='check' value="true"> <label for='equalwidth'>Rows -- Numbered</label><br>
+    <input type="checkbox" name="check-empty-rows" class='check' value="true" checked> <label for='equalwidth'>Rows -- Remove Empty</label><br>
+    <input type="checkbox" name="equalwidth" class='check' value="true"> <label for='equalwidth'>Columns -- Equal Width</label>
+    </div>
+
+
+</div>
+</div>
+
+<div class='sd-tool-row' style='position: relative;'>
+  <div id='sd-instruct' style='width: 50%; display: none; position: absolute; left: 25%; top: -200px;'><div style='text-align: right; cursor: pointer;'>X</div>
+    <ol>
+      <li>Copy and Paste CSV or Excel/TSV data into the ENTER DATA HERE box.</li>
+    </ol>
+    <ul>
+      <li>CELLS -- <b>Click</b> color swatch or attribute swatch then <b>click individual cell</b> to apply. <b>Dbl click</b> to reset formatting on an individual cell.</li>
+      <li>ROWS -- <b>Drag</b> swatch onto row to apply swatch to the <b>entire row</b>.</li>
+      <li>COLUMNS -- <b>Drag</b> the swatch to the column header to apply to column <b>header</b>.</li>
+    </ul>
+  </div>
+</div>
+
+<!-- <div class='sd-tool-row'><input type='button' id='link' value = 'Instructions?' onclick='instructVis()' style='background-color: #F87217;'></input></div> -->
+<div class='sd-tool-row'><input type='button' id='go' value = 'GO!'></input></div>
+
+
+
+<div id='sd-tableizer-container' class='container'></div>
+
+
+
+
+<div class='sd-tool-row'>
+<input type='button' id='reset' value = 'RESET!'></input>
+<input type='button' id='clear' value = 'CLEAR! X' style='background-color: #000000;'></input></div>
+<div class='sd-tool-row'>
+
+
+<input type='button' id='html-out' value = 'HTML! ⬇︎'></input>
+<input type='button' id='edit' value = 'EDIT! ⬆︎' style='background-color: #F87217;'></input>
+</div>
+
+<div class='sd-tool-row'><textarea id="Text2" cols="80" rows="20" placeholder='Output HTML' ></textarea></div>
+</page>
+
+
+<!-- <div class='footer'><img src='img/stats_seandolinar_tag.png' class='footer-logo'></div> -->
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
+<!-- <script type="text/javascript" src="jquery.min.js"></script> -->
+<!-- <script src="d3.min.js"></script> -->
+<!-- <script src='http://www.seandolinar.com/analytics/fangraphs-tableizer/d3_tablizer.js'></script> -->
+<!-- <script type="text/javascript" src='sortable.js'></script> -->
+<script src='d3_general-tablizer.js'></script>
+
+
+
+
+
+</body>
+
